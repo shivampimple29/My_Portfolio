@@ -98,15 +98,17 @@
       color: #2d3436;
     }
 
-    .section ul {
+     ul.custom-list {
       list-style-type: none;
       padding: 0;
     }
 
-    .section ul li {
+    ul.custom-list li::before {
+      content: "✔️ ";
+      color: green;
       margin-bottom: 10px;
     }
-
+    
     .skills span {
       display: inline-block;
       background-color: #dfe6e9;
@@ -307,7 +309,7 @@
 
     <div class="section">
       <h2>Education</h2>
-      <ul type="circle">
+      <ul class="custom-list">
         <li><strong>Persuing B.Tech in Information Technology</strong> – St. Francis Institute of Technology (2028)</li>
         <li>Sem I CGPA: 9.52</li>
         <li>Jr College (12th Standard) subject topper : Computer Science (186/200) </li>
@@ -316,7 +318,7 @@
 
     <div class="section">
       <h2>Achievements</h2>
-      <ul type="square">
+      <ul class="custom-list">
         <li>Successfully completed hands-on modules in HTML, CSS, JavaScript, Node.js, and MongoDB, demonstrating proficiency in web development fundamentals.</li>
         <li>Acquired strong foundational knowledge in C and C++ programming, with a focus on Object-Oriented Programming (OOP) principles and problem-solving approaches.</li>
         <li>Developed in-depth understanding of Python programming in Semester II, including OOP concepts, file handling, and Graphical User Interface (GUI) design using tools like Tkinter.</li>
@@ -327,7 +329,7 @@
 
     <div class="section">
       <h2>Strengths</h2>
-      <ul type="disc">
+      <ul class="custom-list">
         <li>Strong problem-solving mindset</li>
         <li>Effective communicator and team player</li>
         <li>Willingness to learn and adapt to new technologies</li>
@@ -337,9 +339,8 @@
   
     <div class="section">
       <h2>Moto</h2>
-      <ul type="disc">
-        <li>Eager to contribute my technical and creative skills to the CSI-SFIT Tech Team, where I aim to grow through hands-on project experience, collaborative teamwork, and a culture of innovation. I look forward to learning from real-world challenges while actively adding value to the team’s initiatives</li>
-      </ul>
+        <p>Eager to contribute my technical and creative skills to the CSI-SFIT Tech Team, where I aim to grow through hands-on project experience, collaborative teamwork, and a culture of innovation. I look forward to learning from real-world challenges while actively adding value to the team’s initiatives</li>
+      </p>
     </div>
   </div>
 
